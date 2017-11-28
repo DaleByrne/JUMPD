@@ -1,92 +1,189 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Agency Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>JUMPD - HOME</title>
 
-<!-- Bootstrap -->
-<link rel="stylesheet" href="resources/css/bootstrap.css">
-<link rel="stylesheet" href="resources/fonts/font-awesome.min.css">
-<!-- Custom CSS -->
-<link rel="stylesheet" href="resources/css/custom.css">
+<!-- Bootstrap core CSS -->
+<link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<!-- Custom styles -->
+<link href="resources/css/custom.css" rel="stylesheet">
 </head>
-<body>
-<header>
-  <nav class="navbar navbar-default transparent-bg">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="#"><img src="resources/images/logo/logo.png" alt="jumpd"></a> </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#" class="link_style">Home</a></li>
-          <li><a href="#" class="link_style">About Us</a></li>
-          <li><a href="#" class="link_style">Contact Us</a></li>
-			<li><a href="hello.html" class="link_style">Sign Up</a></li>
-        </ul>
-		  <!-- Sidebar -->
-        <ul class="nav navbar-nav navbar-right">
-			<div id="top" class="wrap push fa_style"><a href="#menu" class="menu-link link_style"><i class="fa fa-user-circle-o fa-2x"></i></a></div>            
 
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-  <nav id="menu" class="panel" role="navigation">
-    <div id="menu_actual"><br>
-      <br>
-      <a href="#" class="link_style"><i class="fa fa-sign-in"></i> Sign In</a> <br>
-      <br>
-      <a href="#" class="link_style"><i class="fa fa-user-plus"></i>Sign Up</a> <br>
-      <br>
-      <br>
-    </div>
-  </nav>
-</header>
 <body>
-	<!-- Content to go here -->
-	
-	
-</body>
-<footer class="text-center">
-  <div class="container">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container"> <a class="navbar-brand" href="#"><img src="resources/images/resize_logo.png" alt="jumpd" class="img-fluid"></a>
+    <button class="navbar-dark navbar-toggler bg-theme" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="active"> <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span> </a> </li>
+        <li class="nav-item nav-border"> <a class="nav-link" href="#about">About Us</a> </li>
+        <li class="nav-item nav-border"> <a class="nav-link" href="#plans">Plans</a> </li>
+        <li class="nav-item nav-border"> <a class="nav-link" href="#signup">Sign Up</a> </li>
+		<li class="nav-item nav-border"> <a class="nav-link" href="#contactus">Contact Us</a> </li>
+        <li class="nav-item nav-border"> <a href="#" data-toggle="modal" data-target="#modal-login" class="nav-link">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- smooth scroll -->
+<div id="home"></div>
+<!-- ./smooth scroll -->	
+<header class="main-cover">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-xs-12">
-        <p>Copyright � JUMPD. All rights reserved.</p>
+      <div class="row-box header1 border2">
+        <div class="py-5">
+          <h2 class="text-center">Welcome!</h2>
+          <h4 class="text-center">Choose from one of our health plans</h4>
+        </div>
+        <div><a href="#plans" type="button" class="btn btn-default btn-lg btn-block rounded-0 nav-link bg-white">See Plans</a> </div>
       </div>
     </div>
   </div>
+</header>
+
+<!-- Login Modal --> 
+<!-- MODAL -->
+<div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-login-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-login-label">Login To Our Site</h3>
+        <button type="button" class="close" aria-label="Close" data-dismiss="modal"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body">
+        <form role="form" action="" method="post" class="login-form">
+          <div class="form-group">
+            <label class="sr-only" for="form-username">Username</label>
+            <input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="form-password">Password</label>
+            <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+          </div>
+          <button type="submit" class="btn">Sign in!</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- smooth scroll -->
+<div id="about"></div>
+<!-- ./smooth scroll -->
+<section class="py-5 mt-5">
+  <div class="container">
+    <h1>JUMPD Healthcare</h1>
+    <p class="lead">About us...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+  </div>
+</section>
+
+
+<section class="py-5 background-image" style="background-image: url('https://unsplash.it/1900/900?image=883');">
+  <div class="height-200"></div>
+</section>
+
+<!-- smooth scroll -->
+<div id="plans"></div>
+<!-- ./smooth scroll -->
+<section class="py-5">
+  <div class="container">
+    <h1>Health Plans</h1>
+    <p class="lead">Plan info.....</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+    <div class="row">
+      <div class="col-6">
+        <div class="columns w-100">
+          <ul class="price list-unstyled">
+            <li class="header">Plan 1</li>
+            <li class="grey">€ 49.99 monthly</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+            <li class="grey"><a href="#" class="button nav-link">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="columns w-100">
+          <ul class="price list-unstyled">
+            <li class="header">Plan 2</li>
+            <li class="grey">€69.99 monthly</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+            <li class="grey"><a href="#" class="button nav-link">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- smooth scroll -->
+<div id="signup"></div>
+<!-- ./smooth scroll -->
+
+<section class="py-5 background-image" style="background-image: url('https://unsplash.it/1920/1080?image=1005');">
+  <div class="height-200"></div>
+</section>
+<!-- Content section -->
+<section class="py-5">
+  <div class="container">
+    <h1>Sign Up</h1>
+    <p class="lead">Stuff to go here</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+  </div>
+</section>
+
+<!-- smooth scroll -->
+<div id="contactus"></div>
+<!-- ./smooth scroll -->
+<section class="py5 background-image" style="background-image: url('https://unsplash.it/1900/1080?image=863');"> 
+  <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
+  <div class="height-400"></div>
+  <div class="bg-theme">
+    <div class="container">
+      <div class="content mt-100 pad-10">
+        <h1>Contact Us</h1>
+        <p class="lead">Stuff to go here</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Content section -->
+<section class="py-5" id="">
+  <div class="container">
+    <h1>Form to go here</h1>
+    <p class="lead">Stuff to go here</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; stuff to go here</p>
+  </div>
+  <!-- /.container --> 
 </footer>
 
-<!-- / FOOTER -->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="resources/js/jquery-2.2.4.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="resources/js/bootstrap.min.js"></script>
-<!-- jQuery plugins -->
-<script src="resources/js/plugins.js"></script>
-<!-- Menu Toggle Script -->
-<script>
-$(document).ready(function() {
-
-  $('.menu-link').bigSlide({
-    'side': 'right',
-    'speed': '550',
-    'menuWidth': '15.625em'
-  });
-
-
-});
-</script>
+<!-- Bootstrap core JavaScript --> 
+<script src="resources/vendor/jquery/jquery.min.js"></script> 
+<script src="resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!--smooth scroll--> 
+<script src="resources/js/myjs.js"></script>
 </body>
 </html>
