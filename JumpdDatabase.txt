@@ -1,0 +1,18 @@
+MongoDB Enterprise > db.client.find().pretty()
+{
+        "_id" : ObjectId("5a14ade0d1230417b97975bd"),
+        "title" : "Ms",
+        "fName" : "Joe",
+        "lName" : "Lee",
+        "gender" : "M",
+        "DOB" : "12/02/98",
+        "address1" : "123 Any Street",
+        "address2" : "Anyplace",
+        "town" : "Letterkenny",
+        "county" : "Donegal",
+        "poneNo" : 3218968,
+        "userName" : "ie49vee",
+        "passwd" : "ifre4555",
+        "quote" : 342,
+        "email" : "weertigj@eeii.con"
+}

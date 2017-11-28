@@ -1,0 +1,352 @@
+body {
+	padding-top: 54px;
+}
+a {
+	color: #999999;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	color: #2b2b2b;
+	text-decoration: none;
+}
+h3 {
+	font-size: 22px;
+	font-weight: 300;
+	color: #555;
+	line-height: 30px;
+}
+h4 {
+	font-size: 1em;
+}
+
+.content {
+	color: #fff;
+}
+input[type="text"], input[type="password"], textarea, textarea.form-control {
+	height: 50px;
+	margin: 0;
+	padding: 0 20px;
+	vertical-align: middle;
+	background: #333;
+	border: 1px solid #333;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 50px;
+	color: #888;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-o-transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-ms-transition: all .3s;
+	transition: all .3s;
+}
+textarea, textarea.form-control {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 30px;
+}
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus, textarea.form-control:focus {
+	outline: 0;
+	background: #444;
+	border: 3px solid #555;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+ input[type="text"]:-moz-placeholder, input[type="password"]:-moz-placeholder, textarea:-moz-placeholder, textarea.form-control:-moz-placeholder {
+color: #888;
+}
+ input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, textarea:-ms-input-placeholder, textarea.form-control:-ms-input-placeholder {
+color: #888;
+}
+ input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeholder {
+color: #888;
+}
+button.btn {
+	width: 100%;
+	height: 50px;
+	margin: 0;
+	padding: 0 20px;
+	vertical-align: middle;
+	background: #399599;
+	border: 0;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 50px;
+	color: #fff;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	text-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-o-transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-ms-transition: all .3s;
+	transition: all .3s;
+}
+button.btn:hover {
+	opacity: 0.6;
+	color: #fff;
+}
+button.btn:active {
+	outline: 0;
+	opacity: 0.6;
+	color: #fff;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+button.btn:focus {
+	outline: 0;
+	opacity: 0.6;
+	background: #399599;
+	color: #fff;
+}
+button.btn:active:focus, button.btn.active:focus {
+	outline: 0;
+	opacity: 0.6;
+	background: #399599;
+	color: #fff;
+}
+/**********************************/
+
+/** Navigation Bar **/
+.navbar {
+	background-color: #fff;
+}
+.nav >li >a {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.navbar-expand-lg .navbar-nav > li > a {
+	color: #04a5bb;
+}
+.navbar-expand-lg .navbar-nav > li > a:hover {
+	color: #2b2b2b;
+}
+/** funky border **/
+.nav-border {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	position: relative;
+	overflow: hidden;
+}
+.nav-border:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 50%;
+	right: 50%;
+	bottom: 0;
+	background: #04a5bb;
+	height: 2px;
+	-webkit-transition-property: left, right;
+	transition-property: left, right;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.nav-border:hover:before, .nav-border:focus:before, .nav-border:active:before {
+	left: 0;
+	right: 0;
+}
+/** Square box around active link **/
+.navbar-expand-lg .navbar-nav > .active {
+	color: #fff;
+	background: #04a5bb;
+}
+.navbar-expand-lg .navbar-nav > .active > a, .navbar-expand-lg .navbar-nav > .active > a:hover, .navbar-expand-lg .navbar-nav > .active > a:focus {
+	color: #fff;
+	background: #04a5bb;
+}
+/**********************************/
+
+/** Images **/
+
+
+/** global setting **/
+.background-image {
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.main-cover {
+	background: no-repeat center center scroll;
+	background-image: url(../images/greg-rakozy-54433.jpg);
+	background-size: cover;
+	height: 400px;
+	width: auto;
+	position: static;
+}
+/**********************************/
+
+/** Headers **/
+
+.bg-theme {
+	background-color: #04a5bb;
+}
+.row-box:hover {
+	/*	box-shadow: 0px 10px #2b2b2b;*/
+	width: 350px;
+	height: 250px;
+	background: #0c858f;
+	-webkit-transition-property: width; /* Safari */
+	-webkit-transition-duration: 2s; /* Safari */
+	transition-property: width;
+	transition-duration: 2s;
+	box-shadow: 0 10px #2b2b2b;
+}
+.row-box {
+	position: absolute;
+	overflow: visible;
+	width: 300px;
+	height: 250px;
+	top: 25%;
+	left: 10%;
+	/*	margin-bottom: 100px;*/
+	box-shadow: 0 10px #04a5bb;
+	-webkit-transition-property: width; /* Safari */
+	-webkit-transition-duration: 2s; /* Safari */
+	transition-property: width;
+	transition-duration: 2s;
+}
+.header1 {
+	background-color: #04a5bb;
+	color: #fff;
+}
+/**********************************/
+
+/***** Modal *****/
+
+
+.modal-content {
+	background: #3a3a3a;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 0;
+	text-align: left;
+}
+.modal-header {
+	padding: 25px 25px 15px 25px;
+	background: #333;
+	border: 0;
+	-moz-border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+	color: #888;
+}
+.modal-header .close {
+	font-size: 36px;
+	color: #eee;
+	font-weight: 300;
+	text-shadow: none;
+	opacity: 1;
+}
+.modal-title {
+	margin-bottom: 10px;
+	line-height: 30px;
+	color: #eee;
+}
+.modal-body {
+	padding: 25px 25px 30px 25px;
+	background: #3a3a3a;
+	text-align: left;
+	-moz-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}
+.modal-body img {
+	margin-bottom: 15px;
+}
+.modal-body form textarea {
+	height: 100px;
+}
+.modal-body form .input-error {
+	border-color: #399599;
+	
+}
+/**********************************/
+/** Health Plan Options**/
+
+.columns {
+	float: left;
+}
+.price {	
+	border: 1px solid #eee;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	margin: 0;
+    padding: 0;
+}
+.price:hover {
+	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+.price .header {
+	background-color: #04a5bb;
+	color: white;
+	font-size: 25px;
+}
+.price li {
+	border-bottom: 1px solid #eee;
+	text-align: center;
+	padding: 20px;
+}
+.price .grey {
+	background-color: #eee;
+	font-size: 20px;
+}
+.button {
+	background-color: #04a5bb;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 10px 25px;
+}
+
+/** Helpers **/
+.mt-100 {
+	margin-top: 100px;
+}
+
+.mb-100 {
+	margin-bottom: 100px;
+}
+
+.pad-10 {
+	padding: 10px 25px;
+}
+
+.height-200{
+	height: 200px;
+}
+
+.height-400 {
+	height: 400px;
+}
+
+.height-auto {
+	height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+.columns {
+	width: 100%;
+}
+}
